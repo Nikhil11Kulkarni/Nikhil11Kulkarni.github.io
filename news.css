@@ -1,0 +1,245 @@
+.navbar{
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: none !important;
+    border-bottom: 2px solid dodgerblue !important;
+    line-height: 40px !important;
+    box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.2) !important;
+}
+a{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    cursor: pointer;
+
+
+}
+@media (max-width: 40em) {
+    ul {
+    display: none;
+    }
+}
+a.nav-link{
+    border-top: 4px solid #f8f9fa;
+    transition: border-top .3s;
+    margin: 5px;
+
+}
+a.nav-link p{
+    display: inline;
+}
+a.nav-link:hover{
+    border-top: 4px solid dodgerblue;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+ 
+#blog{
+    color: #2b325f !important;
+    border: 2px solid #2b325f;
+    width: 75px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 !important;
+
+}
+#blog:hover{
+    background: #2b325f;
+    color: #fff !important;
+}
+
+#join{
+    border-radius: 0 !important;
+    width: 150px;
+    margin: 15px;
+    background: #da1333;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: 2px solid #da1333;
+}
+
+.wrapper {
+    width: 990px;
+    padding: 100px 0 0 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+.header{
+    margin: 0 0 60px 0;
+    font-size: 40px;
+    line-height: 116%;
+    font-weight: 400;}
+
+.title h1{
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.title {
+    padding: 0 50px 0 0;
+    font-size: 2.5em;
+    font-weight: 100;
+    line-height: 110%;
+}
+
+.title p{
+    position: relative;
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+
+.title a{
+    font-size: 14px;
+}
+
+.wrapper .row{
+    border-top: 1px solid #ccc;
+    padding: 27px 0;
+}
+
+.title p:before{
+    content: " ";
+    width: 170px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+
+.story{
+    padding: 0;
+    border: 0;
+    color: #fff;
+}
+
+.story p{
+    margin: 0 0 30px 0;
+}
+
+.story img{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+/* 
+CSS for footer area */
+.container-fluid{
+    color: #fff;
+    background-color: #213875;
+    border-bottom: 1px solid #da1333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container-fluid h2{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 2.125rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+.container-fluid h2:after{
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    display: block;
+    content: '';
+    width: 65px;
+    height: 3px;
+}
+
+.container-fluid h3{
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 2.0625rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 2.125rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.mycol{
+    margin-top: 30px;
+    width: 30%;
+    border-right: 1px solid #da1333;
+    padding: 20px 4% 0 4% !important;
+}
+.mycol li{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.icon-container{
+    font-size: 30px;
+    height: 26px;
+    width: 36px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    margin-right: 30px;
+    color: #fff;
+    opacity: 0.6;
+
+}
+ul li a{
+    color: #fff;
+}
+ul{
+    color: white;
+    letter-spacing: .08em;
+    line-height: 18px;
+    list-style-type: none;
+}
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active{
+    background:red;
+}
+
+span.tabtext:before{
+	display: block;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 25px auto 20px auto;
+}
+.img{
+	max-height: 100%;
+    width: 100%;
+    max-width: 75px;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1#head{
+	display: block;
+    color: #2b325f;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    font-weight: 800;
+}
+h2#head{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #da1333;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.icon{
+    font-size:120px;
+}
+.head
+{
+    font-size: 16px;
+    display: inline-block;
+    max-width: 360px;
+}
