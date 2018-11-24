@@ -1,0 +1,24 @@
+#exploreinitiative{
+    color: #2b325f !important;
+    border: 2px solid #2b325f;
+    width: 75px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 !important;
+}
+
+.button{
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: center;
+    padding-top: 17px;
+}
+.header{
+    text-align: center;
+}
+
+.img{
+    border: 0 !important;
+}
