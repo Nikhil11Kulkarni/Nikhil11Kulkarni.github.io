@@ -1,0 +1,47 @@
+/******footer-part******/
+.image-bottom .row{
+    width:100%;
+    margin: 0;
+}
+
+.imgsepration{
+    padding:0px !important;
+
+}
+
+.imgsepration img{
+    padding: 0rem !important; 
+    border-radius: 0rem !important;
+    border: 1px solid black !important;
+    width: inherit;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.socialmedia ul li a{
+    color: aliceblue;
+}
+
+.footer p{
+    font-family: Futura !important;
+}
+.footer a{
+    font-family: Futura !important;
+    font-weight: 100 !important;
+    
+}
+.footer{
+    background-color: #222;
+    color: aliceblue !important;
+    padding: 30px !important;
+    font-family: Futura !important;
+}
+.footer li.nav-item a{
+    color:aliceblue;
+}
+.bar ul{
+    padding: 10px;
+}
+.socialmedia{
+    padding-bottom: 30px;
+}

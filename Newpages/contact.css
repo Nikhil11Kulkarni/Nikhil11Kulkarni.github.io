@@ -1,0 +1,105 @@
+.contact-col-1{
+    background-image: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45) ),url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-col-2{
+    background-image: linear-gradient( rgba(12, 219, 226, 0.45), rgba(16, 190, 199, 0.45) ),url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col h4{
+    font-style: italic;
+    font-family:'Titillium Web', sans-serif;
+    padding-top: 5%;
+}
+.col h1{
+    font-family:'Open Sans';
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 5%;
+}
+.two-way .col{
+    padding: 10% !important;
+}
+.hi{
+    padding: 10% !important;
+}
+.col p{
+    font-family: 'Arvo', serif;
+    font-size:18px;
+    padding-top: 3%;
+}
+.two-way{
+    color:white;
+    width: 100%;
+    margin: 0 !important;
+
+}
+
+.row{
+    text-align: center;
+}
+#apply-now{
+    color: white !important;
+    border: 3px solid white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400;
+    border-radius: 0 !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.col h7{
+    border: 2px solid black;
+    padding: 0 1%;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+.col h2{
+    padding-top: 2%;
+}
+#blog:hover{
+    background: rgba(255, 255, 255, .4);
+    color: #fff !important;
+}
+.jumbo-outer{
+    background: url(https://gratisography.com/thumbnails/gratisography-441-thumbnail-small.jpg);
+    background-size: cover;
+}
+.jumbo-inner{
+    margin: 10% 15%;
+    background: rgba(250,0,0,0.6) !important;
+    color: white;
+}
+.test-row{
+    background-image: url(https://isorepublic.com/wp-content/uploads/2017/01/man-holding-glowing-orb-1000x750.jpg);
+    background-size: cover;
+    padding:5% !important;
+    color:white;
+}
+
+.hi{
+    position: absolute;
+    height: 40rem;
+    width: 100%;
+    background: blanchedalmond;
+    margin-left: 0 !important;
+}
+.container{
+    position: relative !important;
+    top: 30rem !important;
+}
+.test-row{
+    top: 30rem;
+    position: relative;
+    width: 100%;
+    margin-left: 0 !important;
+}
+.footer{
+    position: relative;
+    top: 32rem;
+}

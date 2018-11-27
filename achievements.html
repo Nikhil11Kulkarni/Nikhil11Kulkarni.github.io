@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon title and our CSS -->    
+    <link rel="shortcut icon" href="vikasicon.ico">
+    <title>Achievements | Dr. Mahatme</title>
+    <link rel="stylesheet" type="text/css" href="achievements.css">
+    <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
+
+    <script>
+    // Hide Header on on scroll down
+    document.onreadystatechange = function (){
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 60;
+        var navbarHeight = $('header').outerHeight();
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > navbarHeight*2){
+                // Scroll Down
+                $('header').fadeIn(300).removeClass('nav-up').addClass('nav-down');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').fadeOut(200).removeClass('nav-down').addClass('nav-up');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    }
+    </script>
+  </head>
+
+<body>
+ 
+    <img class="img-thumbnail rajgad" src="images/mountain.jpg">
+
+<div class="jumbotron">
+    <div class="row padma-shree">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  padma-pic" >
+            <img class="img-thumbnail" src="images/pic4.jpg">
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padma-text" >
+            <h3>Dr. Mahatme awarded by Padma Shree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+</div>
+
+</body>

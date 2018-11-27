@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Connect | Dr.Mahatme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Arvo|Merriweather|Merriweather+Sans|Open+Sans|Oswald|Playfair+Display|Titillium+Web|Yellowtail" rel="stylesheet">
+    <script>
+        
+    // Hide Header on on scroll down
+    document.onreadystatechange = function (){
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 60;
+        var navbarHeight = $('header').outerHeight();
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > navbarHeight*2){
+                // Scroll Down
+                $('header').fadeIn(300).removeClass('nav-up').addClass('nav-down');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').fadeOut(200).removeClass('nav-down').addClass('nav-up');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    }
+
+    </script>
+</head>
+<body>
+     <header class="nav-up">
+                <nav class="navbar sticky-top navbar-expand-xl navbar-light">
+                        <a class="navbar-brand" href="../index.html">
+                            <h3>        Dr. Vikas Mahatme</h3>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse nbar" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-lg-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../about.html">About me</a>
+                                <a class="dropdown-item" href="../about.html">Vision</a>
+                                <a class="dropdown-item" href="../about.html">with BJP</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                At Nation's Service
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="../nation.html" class="dropdown-item" >Debates and Issues Raised In Parliament</a>
+                                <a href="../achievements.html" class="dropdown-item" >Achievements</a>
+                                <a href="../initiatives.html" class="dropdown-item" >Major Initiatives</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Gallery
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../gallery.html">Photo Gallery</a>
+                                <a class="dropdown-item" href="#">Videos</a>
+                                <a class="dropdown-item" href="#">Speeches</a>
+                                </div>
+                            </li>
+                            </ul>
+                            <form class="form-inline">
+                            <a href="https://padmshridrmahatme.blogspot.com/"><button id="blog" class="btn btn-outline-success" type="button">Blog</button></a>
+                            <a href="contact.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
+                        </form>
+                        </div>
+                    </nav>
+            </header>
+
+
+
+
+    <nav class="navbar tempnav navbar-expand-xl navbar-dark">
+            <a class="navbar-brand" href="../index.html">
+                <h3>        Dr. Vikas Mahatme</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tempnavbarSupportedContent" aria-controls="tempnavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse nbar" id="tempnavbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../about.html">About me</a>
+                    <a class="dropdown-item" href="../about.html">Vision</a>
+                    <a class="dropdown-item" href="../about.html">with BJP</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    At Nation's Service
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a href="../nation.html" class="dropdown-item" >Debates and Issues Raised In Parliament</a>
+                    <a href="../achievements.html" class="dropdown-item" >Achievements</a>
+                    <a href="../initiatives.html" class="dropdown-item" >Major Initiatives</a>
+                    </div>
+                </li>
+
+<!--                 <li class="nav-item">
+                    <a href="journey.html" class="nav-link" >Journey</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../news.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gallery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../gallery.html">Photo Gallery</a>
+                    <a class="dropdown-item" href="#">Videos</a>
+                    <a class="dropdown-item" href="#">Speeches</a>
+                    </div>
+                </li>
+                </ul>
+                <form class="form-inline">
+                <a href="https://padmshridrmahatme.blogspot.com/"><button id="blog" class="btn btn-outline-success" type="button">Blog</button></a>
+                <a href="contact.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
+            </form>
+            </div>
+        </nav>
+  
+    <div class="row two-way">
+        <div class="col contact-col-1">
+            <h4>I'm a candidate</h4>
+            <h1>Looking for an Internship</h1>
+            <p>From resume building to interview etiquette, we set you up for success</p>
+            <button id="apply-now" class="btn btn-outline-success" type="button">Apply Now</button></a>
+        </div>
+        <div class="col contact-col-2">
+            <h4>I'm a citizen</h4>
+            <h1>Looking for voluntering</h1>
+            <p>Discover our range of services designed to keep nation booming</p>
+            <button id="apply-now" class="btn btn-outline-success" type="button">Apply Now</button></a>
+        </div>
+    </div>
+    <div class="row hi">
+        <div class="col">
+            <h7>Hi</h7>
+            <h2>We're raising the bar for workforce management.</h2>
+            <p>We believe when the right people come together, creativity thrives, oppurtunities appear, and business grows</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron jumbo-outer">
+            <div class="jumbotron jumbo-inner">
+            <h1>We know People</h1>
+            <p>Positive energy can transform an organization, and it all starts with the right people. That's where we come in.</p>
+            <button id="apply-now" class="btn btn-outline-success" type="button">Apply Now</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="row test-row">
+        <h1></h1>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail" src="./../images/pic5.jpg">
+                </div>            
+                <div class="col">
+                    <h4>Ankit A Jha</h4>
+                    <p>Aweesome learning experience. Good practical hands on. Some more text here.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h4>Ankit A Jha</h4>
+                    <p>Aweesome learning experience. Good practical hands on. Some more text here.</p>
+                </div>            
+                <div class="col">
+                    <img class="img-thumbnail" src="./../images/pic5.jpg">                    
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+        <div class="footer">
+            <div class="bar">
+                <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contributions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://www.facebook.com/drmahatme/">
+                        <span class="icon-container"><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="icon-container"><i class="fab fa-twitter"></i></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/company/bjp4india/">
+                        <span class="icon-container"><i class="fab fa-linkedin"></i></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/user/BJP4India">
+                        <span class="icon-container"><i class="fab fa-youtube"></i></span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <div class="vikas mahatme">
+                <p class="text-justify text-center">
+                Copyright © 2018 NAPsac. Site design handcrafted by Nikhil, Ankit and Pushpam.
+                </p>
+            </div>
+            <div class="copyright">
+                <p class="text-justify text-center">
+                    Honorable Dr Mahatme  |  Padma Shri Awardee
+                </p>   
+            </div>
+        </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
