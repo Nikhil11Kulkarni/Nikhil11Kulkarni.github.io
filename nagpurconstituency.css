@@ -1,0 +1,72 @@
+
+#page-content h1{
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+    line-height: 2.75rem;
+    color: #2b325f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#page-content p{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    color: #2b325f;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#Vision, #BJPIdeology{
+    max-width: 765px;
+    width: 92%;
+    margin: auto;
+}
+#page-content{    
+    padding: 50px 0;
+}
+
+.d-block{
+    height: 70vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+.bio{
+        padding: 8% 0;
+
+}
+.bio h2{
+    text-align: center;
+    padding: 10%;
+}
+.bio .bio-col2{
+        border-left: solid 2px black;
+    padding-left: 5%;
+}
+
+.vision{
+    width: 100%;
+    background-size: cover;
+      background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(206, 197, 188, 0.45), 
+      rgba(175, 158, 141, 0.45)
+    ),
+    /* your image */
+    url(images/nagpur4.jpg);
+}
+
+.vision .jumbotron{
+    margin:7%;
+}
+
+.bjp-ideology{
+    margin: 5%;
+}
+
+.bjp-ideology .bjp2{
+    border-left: solid 2px black;
+    padding: 3%;
+}

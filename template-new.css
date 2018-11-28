@@ -1,0 +1,218 @@
+/*temp nav bar*/
+
+header {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 100000;
+}
+.nav-up {
+    display: none;
+  }
+
+.tempnav{
+    /* background-color: rgba(255, 255, 255, 0.95); */
+    /* background-image: none !important; */
+    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
+    position: absolute;;
+    width:100%;
+    /* border-bottom: 2px solid dodgerblue !important; */
+    line-height: 40px !important;
+    /* box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.2) !important; */
+    z-index: 100;
+}
+.tempnav div#navbarSupportedContent{
+    font-weight: 700;
+}
+.tempnav a.navbar-brand{
+    color: white;
+
+}
+a.navbar-brand{
+    padding-top: .8rem !important;
+}
+.tempnav a.navbar-brand:hover{
+    color: white;
+}
+.tempnav a#navbarDropdown{
+    color:rgb(253, 239, 239);
+}
+.tempnav a.nav-link{
+    border-top: 4px solid transparent;
+    color: white !important;
+    transition: border-top .3s;
+    margin: 5px;
+}
+.tempnav #blog{
+    color: white !important;
+    border: 2px solid white;
+    width: 75px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 !important;
+
+}
+.tempnav #blog:hover{
+    background: rgba(255, 255, 255, .4);
+    color: #fff !important;
+}
+
+#join{
+    border-radius: 0 !important;
+    width: 150px;
+    margin: 15px;
+    background: rgba(255,120,51,.9);
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: 2px solid rgba(255,120,51,.9);
+}
+
+#join:hover{
+    background: rgba(255,120,51,1);
+    border: 2px solid rgba(255,120,51,.9);
+}
+
+/* sticky nav bar */
+.sticky-top{
+    background-color: rgba(255, 255, 255, 1);
+    background-image: none !important;
+    position:fixed;
+    width:100%;
+    border-bottom: 1.5px solid dodgerblue !important;
+    line-height: 40px !important;
+    box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.template-links{
+    font-family: century gothic, Futura, "Trebuchet MS", Arial, sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+
+
+}
+a.nav-link{
+
+    border-top: 4px solid transparent;
+    transition: border-top .3s;
+    margin: 5px;
+}
+a.nav-link p{
+    display: inline;
+}
+a.nav-link:hover{
+    border-top: 4px solid dodgerblue;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+ 
+#blog{
+    color: #2b325f !important;
+    border: 2px solid #2b325f;
+    width: 75px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 !important;
+
+}
+#blog:hover{
+    background: #2b325f;
+    color: #fff !important;
+}
+
+#join{
+    border-radius: 0 !important;
+    width: 150px;
+    margin: 15px;
+    background: rgba(255,120,51,.9);
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: 2px solid rgba(255,120,51,.9);
+}
+
+
+
+#theCarousel {
+    width:100%;/*maintain aspect ratio*/
+}
+ 
+
+/* Text over carasoul */
+
+.centered111 {
+    font-size: 48px;
+     color: white;    
+    font-family: "Quicksand", sans-serif;
+    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
+    padding: 10px 20px 5px 20px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    text-transform: uppercase;
+    top: 60%;
+    left: 3%;
+}
+
+.centered111 h5{
+    font-size : 3vw;
+}
+.centered111 h2{
+    font-size : 5vw;
+}
+
+
+/******footer-part******/
+
+.socialmedia ul li a{
+    color: aliceblue;
+}
+
+.footer p{
+    font-family: Futura !important;
+}
+.footer a{
+    font-family: Futura !important;
+    font-weight: 100 !important;
+    
+}
+.footer{
+    background-color: #222;
+    color: aliceblue !important;
+    padding: 30px !important;
+    font-family: Futura !important;
+}
+.footer li.nav-item a{
+    color:aliceblue;
+}
+.bar ul{
+    padding: 10px;
+}
+.socialmedia{
+    padding-bottom: 30px;
+}
+
+
+/* icons in footer */
+.icon-container{
+    font-size: 30px;
+    height: 26px;
+    width: 36px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    /* margin-right: 30px; */
+    color: #fff;
+    opacity: 0.6;
+
+}
