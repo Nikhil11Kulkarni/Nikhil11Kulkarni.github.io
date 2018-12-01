@@ -1,0 +1,12 @@
+
+.rajya_sabha{
+    height: 90vh;
+     width: 100%;
+    background-size: cover;
+      background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(245, 244, 243, 0), rgb(0, 0, 0) ),
+    /* your image */
+    url(images/rajyasabha3.jpg);   
+}

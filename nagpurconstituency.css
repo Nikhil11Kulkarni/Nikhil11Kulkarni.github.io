@@ -34,6 +34,7 @@
 
 .bio{
         padding: 8% 0;
+        margin: 0;
 
 }
 .bio h2{
@@ -48,6 +49,7 @@
 .vision{
     width: 100%;
     background-size: cover;
+    margin: 0;
       background-image: 
     /* top, transparent red */
     linear-gradient(

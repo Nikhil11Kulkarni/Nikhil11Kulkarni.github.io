@@ -73,11 +73,6 @@ header {
     width:100%;
     margin: 0;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        .image-bottom .row{
-            display: none !important;
-        }
-    }    
 
 .imgsepration{
     padding:0px !important;
@@ -96,11 +91,7 @@ header {
 .socialmedia ul li a{
     color: aliceblue;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {   
-    #footer p{
-        font-size: .85rem !important;
-    }
-}
+
 .footer p{
     font-family: Futura !important;
 }
@@ -157,24 +148,17 @@ header {
 /***** Describing the padding and spaces in quote section****/
 .jumbotron.center {
     background-color: #05203c !important;
+    padding-bottom: 20px;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    padding-bottom: 50px;
-}
-@media (min-device-width : 320px) and (max-device-width : 480px) {   
-    #quote p{
-        font-size: 1.6rem !important;
-        padding: 20vh 10vw !important;
-        padding-bottom: 1.25rem !important;
-        }
 }
 
 #quote p{
-    font-size: 1.8999rem;
-    padding: 3.7998rem 7.5996rem;
+    font-size: 30px;
+    padding: 60px 120px;
     font-family: Baskerville;
-    padding-bottom: 1.2666rem;
+    padding-bottom: 20px;
     font-style: italic;
     line-height: unset !important;
 }
@@ -191,30 +175,18 @@ header {
 #initiatives .row{
 padding-bottom: 80px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .headerinitiative h1{
-        font-size: 1.6rem !important;
-        line-height: 1.5 !important;
-        padding: 2rem 1rem !important;
-    }
-}
-    
-.headerinitiative{
-    width : 100%;
-}
 .headerinitiative h1{
     font-family: Gill Sans;
     font-size: 2rem;
     line-height: 1.5;
-    padding: 6.333rem;
-    padding-bottom: .94995rem;
+    padding: 100px;
+    padding-bottom: 15px;
     font-weight: 500;
 }
-
 .headerinitiative h3{
     font-weight: 300;
     font-family: Gill Sans;
-    padding: 1.8999rem;
+    padding: 30px;
     font-size: 1.5rem;
 }
 
@@ -225,7 +197,7 @@ padding-bottom: 80px;
 .tempnav{
     /* background-color: rgba(255, 255, 255, 0.95); */
     /* background-image: none !important; */
-    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
+    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0) );
     position: absolute;;
     width:100%;
     /* border-bottom: 2px solid dodgerblue !important; */
@@ -270,6 +242,17 @@ a.navbar-brand{
     background: rgba(255, 255, 255, .4);
     color: #fff !important;
 }
+
+
+
+
+@media (max-width: 992px){
+nav.navbar.tempnav.navbar-expand-xl.navbar-dark {
+    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.5) );
+}
+
+}
+
 
 #join{
     border-radius: 0 !important;
@@ -352,8 +335,7 @@ a.nav-link:hover{
 }
 
 #splitout1{
-        padding:  95px !important;
-        height: 25rem;
+        padding: 45px 95px !important;
         /*background: rgba(46,56,48,.9);*/
         background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0,0.6) ), url(./images/indian-voters.jpg);
         background-size:cover;
@@ -366,8 +348,7 @@ a.nav-link:hover{
         /*background: rgba(255,120,51,.9);*/
          background-image: linear-gradient( rgba(225, 225,225, .8), rgba(225, 225, 225,0.8) ), url(./images/india_white.jpg); 
          background-size:cover;
-        padding: 95px;
-        height: 25rem; 
+        padding: 45px 95px; 
         /*color:#111111 !important;*/
 }
 
@@ -408,14 +389,14 @@ a.nav-link:hover{
 
 }
 .fa{
-    font-size: 3.1665;
+    font-size: 50px;
     /*padding: 20px;*/
 
 }
 
 .footer_logo li a{
-    width: 3.1665rem;
-    height: 2.08989rem;
+    width: 50px;
+    height: 33px;
     margin: 0px 0px;
     text-align: left;
     background-color: #313131;
@@ -424,15 +405,15 @@ a.nav-link:hover{
 }
 .dark{
     color:black;
-    padding:1.2666rem;
+    padding:20;
 }
 .transbackground{
         background: rgba(10, 29, 53, 0.5);  
-        font-size: 3.03984rem;
+        font-size: 48px;
         color: white;    
         font-family: "Quicksand", sans-serif;
         background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
-        padding: .6333rem 1.2666rem .031665rem 1.2666rem;
+        padding: 10px 20px 5px 20px;
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 #theCarousel {
@@ -480,6 +461,7 @@ h4{
     line-height: 2rem;
 }
 img.d-block{
+        height: 100vh;
     object-position: 0 10%;
     max-height: 100vh;
     object-fit: cover;
@@ -489,21 +471,8 @@ img.d-block{
 /*footer*/
 
 
-@media (min-width: 1200px){
-.mycontainer {
-    /*max-width: 1140px;*/
-    display: none;
-  /*max-width: 1200px;*/
 
-}
-}
 
-@media (min-width: 992px){
-.mycontainer {
-    /*max-width: 960px;*/
-    display: none;
-}
-}
 
 .container {
   width: 90%;
@@ -600,14 +569,6 @@ img.d-block{
     margin-bottom: 10px;
     font-size: 20px;
 }
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .icon-container{
-        width: 30% !important;
-    }
-}
-    
 .icon-container{
     font-size: 30px;
     height: 26px;
