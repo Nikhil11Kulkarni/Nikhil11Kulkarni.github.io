@@ -34,21 +34,35 @@
 
 .bio{
         padding: 8% 0;
+        width: 100% !important;
+        margin: 0;
 
 }
 .bio h2{
     text-align: center;
     padding: 10%;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .bio .bio-col2{
+        border-left: none !important;
+        padding-left: 5%;
+    }
+}
+    
 .bio .bio-col2{
     border-left: solid 2px black;
     padding-left: 5%;
 }
 
+p{
+    margin-bottom: 0;
+}
 .vision{
-    width: 100%;
+    width: 100% !important;
+    margin: 0 !important;
     background-size: cover;
-      background-image: 
+    background-image: 
     /* top, transparent red */
     linear-gradient(
       rgba(206, 197, 188, 0.45), 
@@ -60,13 +74,24 @@
 
 .vision .jumbotron{
     margin:7%;
+    background: rgba(9,49,69,0.7) !important;
+    color: white;
 }
 
 .bjp-ideology{
     margin: 5%;
 }
 
-.bjp-ideology .bjp2{
-    border-left: solid 2px black;
-    padding: 3%;
+.bjp1{
+    margin: auto;
 }
+.bjp1 img{
+    border:none !important;
+}
+.bjp-ideology .bjp2{
+    /* border-left: solid 2px black; */
+    padding: 3vw;
+    margin: auto;
+}
+
+/* last responsive/bootstrap shit */

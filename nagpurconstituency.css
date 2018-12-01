@@ -70,3 +70,13 @@
     border-left: solid 2px black;
     padding: 3%;
 }
+
+.otherrep{
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 115%;
+    padding-top: 1%;
+}

@@ -1,3 +1,14 @@
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+ /*   width: 1000px;
+    padding: 100px 0 0 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;*/
+}
+
 .navbar{
     background-color: rgba(255, 255, 255, 0.95);
     background-image: none !important;
@@ -131,7 +142,7 @@ h2:before{
     text-align: center !important;
 }
 body{
-    background: #1c2c64 !important;
+    background: #2d442ebd !important;  /*#1c2c64 !important;*/
 }
 
 .title {

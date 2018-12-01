@@ -1,3 +1,14 @@
+.row{
+    margin-right: 0;
+    margin-left: 0;
+ /*   width: 1000px;
+    padding: 100px 0 0 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;*/
+}
+
 .navbar{
     background-color: rgba(255, 255, 255, 0.95);
     background-image: none !important;
@@ -136,7 +147,7 @@ body{
 
 .title {
     color: #f7cf56;
-    padding: 0 50px 0 0;
+  /*  padding: 0 50px 0 0;*/
     font-size: 2.5em;
     font-weight: 100;
     line-height: 110%;
@@ -158,7 +169,7 @@ body{
 }
 
 .story{
-    padding: 0;
+/*    padding: 0;*/
     border: 0;
     color: #fff;
 }

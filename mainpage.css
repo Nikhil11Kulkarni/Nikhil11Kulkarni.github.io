@@ -1,3 +1,6 @@
+
+
+
 /*temp nav bar*/
 
 header {
@@ -12,7 +15,25 @@ header {
     display: none;
   }
  
-#exploreinitiative{
+ 
+#exploreinitiative1{
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 !important;
+    font-family: Gill Sans;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+#exploreinitiative1:hover{
+    background: rgba(200, 200, 200, .5);
+}
+
+#exploreinitiative2{
     color: #2b325f !important;
     border: 2px solid #2b325f;
     text-transform: uppercase;
@@ -22,9 +43,11 @@ header {
     border-radius: 0 !important;
     font-family: Gill Sans;
     font-weight: 400;
+    margin-bottom: 28px;
 }
-#exploreinitiative:hover{
-    background: rgba(200, 200, 200, .1);
+
+#exploreinitiative2:hover{
+    background: rgba(200, 200, 200, .5);
 }
 
 .buttoninitiative{
@@ -50,6 +73,11 @@ header {
     width:100%;
     margin: 0;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .image-bottom .row{
+            display: none !important;
+        }
+    }    
 
 .imgsepration{
     padding:0px !important;
@@ -68,7 +96,11 @@ header {
 .socialmedia ul li a{
     color: aliceblue;
 }
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {   
+    #footer p{
+        font-size: .85rem !important;
+    }
+}
 .footer p{
     font-family: Futura !important;
 }
@@ -94,7 +126,7 @@ header {
 }
 /******featured-article******/
 .featured-article{
-    height:40vh;
+/*    height:40vh;*/
 }
 .featured-article img{
     position: absolute;
@@ -123,11 +155,26 @@ header {
     margin: 0;
 }
 /***** Describing the padding and spaces in quote section****/
+.jumbotron.center {
+    background-color: #05203c !important;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+}
+@media (min-device-width : 320px) and (max-device-width : 480px) {   
+    #quote p{
+        font-size: 1.6rem !important;
+        padding: 20vh 10vw !important;
+        padding-bottom: 1.25rem !important;
+        }
+}
+
 #quote p{
-    font-size: 30px;
-    padding: 60px 120px;
+    font-size: 1.8999rem;
+    padding: 3.7998rem 7.5996rem;
     font-family: Baskerville;
-    padding-bottom: 20px;
+    padding-bottom: 1.2666rem;
     font-style: italic;
     line-height: unset !important;
 }
@@ -144,18 +191,30 @@ header {
 #initiatives .row{
 padding-bottom: 80px;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .headerinitiative h1{
+        font-size: 1.6rem !important;
+        line-height: 1.5 !important;
+        padding: 2rem 1rem !important;
+    }
+}
+    
+.headerinitiative{
+    width : 100%;
+}
 .headerinitiative h1{
     font-family: Gill Sans;
     font-size: 2rem;
     line-height: 1.5;
-    padding: 100px;
-    padding-bottom: 15px;
+    padding: 6.333rem;
+    padding-bottom: .94995rem;
     font-weight: 500;
 }
+
 .headerinitiative h3{
     font-weight: 300;
     font-family: Gill Sans;
-    padding: 30px;
+    padding: 1.8999rem;
     font-size: 1.5rem;
 }
 
@@ -293,19 +352,33 @@ a.nav-link:hover{
 }
 
 #splitout1{
-        padding: 45px 95px !important;
-        background: rgba(46,56,48,.9);
-        background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0,0.1) );
+        padding:  95px !important;
+        height: 25rem;
+        /*background: rgba(46,56,48,.9);*/
+        background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0,0.6) ), url(./images/indian-voters.jpg);
+        background-size:cover;
     }
 
 *::after{
         background: rgba(10, 29, 53, 0.5);
     }
 #splitout2{
-        background: rgba(255,120,51,.9);
-        /* background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0,0.1) ); */
-        padding: 45px 95px; 
+        /*background: rgba(255,120,51,.9);*/
+         background-image: linear-gradient( rgba(225, 225,225, .8), rgba(225, 225, 225,0.8) ), url(./images/india_white.jpg); 
+         background-size:cover;
+        padding: 95px;
+        height: 25rem; 
+        /*color:#111111 !important;*/
 }
+
+#splitout2 p{
+    color: #111 !important;
+}
+
+#splitout2 h4{
+    color: #111 !important;
+}
+
 .splitout{
     margin-right: 0px; 
     margin-left: 0px;
@@ -314,9 +387,10 @@ a.nav-link:hover{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    padding-top: 23px
 }
 .splitout h4{
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 100;
     line-height: 110%;
 }
@@ -334,14 +408,14 @@ a.nav-link:hover{
 
 }
 .fa{
-    font-size: 50px;
+    font-size: 3.1665;
     /*padding: 20px;*/
 
 }
 
 .footer_logo li a{
-    width: 50px;
-    height: 33px;
+    width: 3.1665rem;
+    height: 2.08989rem;
     margin: 0px 0px;
     text-align: left;
     background-color: #313131;
@@ -350,15 +424,15 @@ a.nav-link:hover{
 }
 .dark{
     color:black;
-    padding:20;
+    padding:1.2666rem;
 }
 .transbackground{
         background: rgba(10, 29, 53, 0.5);  
-        font-size: 48px;
+        font-size: 3.03984rem;
         color: white;    
         font-family: "Quicksand", sans-serif;
         background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
-        padding: 10px 20px 5px 20px;
+        padding: .6333rem 1.2666rem .031665rem 1.2666rem;
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 #theCarousel {
@@ -406,18 +480,39 @@ h4{
     line-height: 2rem;
 }
 img.d-block{
+    object-position: 0 10%;
     max-height: 100vh;
     object-fit: cover;
     opacity: .8;
 }
 
 /*footer*/
+
+
+@media (min-width: 1200px){
+.mycontainer {
+    /*max-width: 1140px;*/
+    display: none;
+  /*max-width: 1200px;*/
+
+}
+}
+
+@media (min-width: 992px){
+.mycontainer {
+    /*max-width: 960px;*/
+    display: none;
+}
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
+
+
 .imgcontainer{
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, .5),rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 }
@@ -505,6 +600,14 @@ img.d-block{
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .icon-container{
+        width: 30% !important;
+    }
+}
+    
 .icon-container{
     font-size: 30px;
     height: 26px;
@@ -570,3 +673,14 @@ h2#head{
     display: inline-block;
     max-width: 360px;
 }
+
+/*for row width*/
+.row
+{
+    width: 100%;
+}
+
+
+
+
+

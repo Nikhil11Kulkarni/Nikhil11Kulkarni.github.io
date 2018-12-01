@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="vikasicon.ico">
     <title>Home | Dr. Mahatme</title>
     <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <link rel="stylesheet" type="text/css" href="contact_box.css">
 <!--     <link rel="stylesheet" type="text/css" href="Newpages/navbar.css">
     <link rel="stylesheet" type="text/css" href="Newpages/footer.css"> -->
     
@@ -90,7 +91,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <header class="nav-up">
                 <nav class="navbar sticky-top navbar-expand-xl navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="#">
                             <h3>        Dr. Vikas Mahatme</h3>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +111,7 @@
                                 <a class="dropdown-item" href="about.html">About me</a>
                                 <a class="dropdown-item" href="visionmahatme.html">Vision</a>
                                 <a class="dropdown-item" href="bjpfornation.html">with BJP</a>
-                                <a class="template-links dropdown-item" href="nagpurconstituency.html">Nagpur Constituency</a>                                
+                                 <a class="template-links dropdown-item" href="nagpurconstituency.html">Nagpur Constituency</a>                                
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -139,7 +140,7 @@
                             </ul>
                             <form class="form-inline">
                             <a href="https://padmshridrmahatme.blogspot.com/"><button id="blog" class="btn btn-outline-success" type="button">Blog</button></a>
-                            <a href="Newpages/contact.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
+                            <a href="connect.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
                         </form>
                         </div>
                     </nav>
@@ -149,7 +150,7 @@
 
 
     <nav class="navbar tempnav navbar-expand-xl navbar-dark">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <h3>        Dr. Vikas Mahatme</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tempnavbarSupportedContent" aria-controls="tempnavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -169,7 +170,7 @@
                     <a class="dropdown-item" href="about.html">About me</a>
                     <a class="dropdown-item" href="visionmahatme.html">Vision</a>
                     <a class="dropdown-item" href="bjpfornation.html">with BJP</a>
-                    <a class="template-links dropdown-item" href="nagpurconstituency.html">Nagpur Constituency</a>
+                     <a class="template-links dropdown-item" href="nagpurconstituency.html">Nagpur Constituency</a>                                
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -202,159 +203,206 @@
                 </ul>
                 <form class="form-inline">
                 <a href="https://padmshridrmahatme.blogspot.com/"><button id="blog" class="btn btn-outline-success" type="button">Blog</button></a>
-                <a href="Newpages/contact.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
+                <a href="connect.html"><button id="join" class="btn btn-outline-success" type="button" >Connect</button></a>
             </form>
             </div>
         </nav>
 
 
-    
+    <!-- the carousel -->
     <div id="theCarousel" class="carousel slide" data-ride="carousel">
       
 
-      <ol class="carousel-indicators">
-        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#theCarousel" data-slide-to="1"></li>
-        <li data-target="#theCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
+    <ol class="carousel-indicators">
+     <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#theCarousel" data-slide-to="1"></li>
+     <li data-target="#theCarousel" data-slide-to="2"></li>
+    </ol>
+      
+    
+    <div class="carousel-inner">
         <div class="carousel-item active">
-<!--   <div class="centeredwhite">
+            <!-- the contact form -->
+            <div class="d-none d-lg-block">
+                <div class="centeredwhite">
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form" >
+                            <span class="contact100-form-title">
+                                Participate in Nation Building
+                            </span>
 
-        <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-                <span class="contact100-form-title">
-                    Participate in Nation Building
-                </span>
+                            <div id="colcontent" class= "collapse">
+                                <p>Join us to participate in policy making. We will reach out to you.</p>
+                            </div>
 
-                <div>
-                    <p>Join us to participate in policy making. We will reach out to you.</p>
-                </div>
+                            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                <span class="label-input100">Your Name</span>
+                                <input class="input100" type="text" name="name" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Name is required">
-                    <span class="label-input100">Your Name</span>
-                    <input class="input100" type="text" name="name" placeholder="">
-                    <span class="focus-input100"></span>
-                </div>
+                            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                                <span class="label-input100">Email</span>
+                                <input class="input100" type="text" name="email" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <span class="label-input100">Email</span>
-                    <input class="input100" type="text" name="email" placeholder="">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Valid contact is required: 9999999999">
-                    <span class="label-input100">Contact Number</span>
-                    <input class="input100" type="text" name="contact" placeholder="">
-                    <span class="focus-input100"></span>
-                </div>
+                            <div class="wrap-input100 validate-input" data-validate="Valid contact is required: 9999999999">
+                                <span class="label-input100">Contact Number</span>
+                                <input class="input100" type="text" name="contact" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
 
 
-                <div class="container-contact100-form-btn">
-
-                    <div class="ajax-button">
-                        <div class="fa fa-check done"></div>
-                            <div class="fa fa-close failed"></div>
-                                <input id="submit" class="submit" type="button" value="Submit">
+                            <div class="container-contact100-form-btn">
+                                <div class="ajax-button">
+                                    <div class="fa fa-check done"></div>
+                                        <div class="fa fa-close failed"></div>
+                                            <a href="#colcontent" data-toggle ="collapse">
+                                                <input id="submit" class="submit" type="button" value="Submit">
+                                            </a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
-        </div>
-    </div>
-
-
-
-    <div id="dropDownSelect1"></div> -->
-
-<!--===============================================================================================-->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-    <script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script>
-        $(".selection-2").select2({
-            minimumResultsForSearch: 20,
-            dropdownParent: $('#dropDownSelect1')
-        });
-    </script>
-<!--===============================================================================================-->
-    <script src="vendor/daterangepicker/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-    <script src="js/main.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
+            </div>
 
 
 
 
+            <div id="dropDownSelect1"></div>
+
+            <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+            <script src="vendor/animsition/js/animsition.min.js"></script>
+            <script src="vendor/bootstrap/js/popper.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="vendor/select2/select2.min.js"></script>
+            <script>
+                $(".selection-2").select2({
+                    minimumResultsForSearch: 20,
+                    dropdownParent: $('#dropDownSelect1')
+                });
+            </script>
+            <script src="vendor/daterangepicker/moment.min.js"></script>
+            <script src="vendor/daterangepicker/daterangepicker.js"></script>
+            <script src="vendor/countdowntime/countdowntime.js"></script>
+            <script src="js/main.js"></script>
+
+            <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+            </script>
 
 
-    <div class="imgcontainer">
-    <img class="d-block w-100" src="images/pic1c.jpg?noresize" max-height=652px alt="First slide">
-    </div>
-<!--         <h4>Column 1</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus. Mauris dui felis, sagittis in dapibus eget, porta quis elit. Donec sodales placerat porta. Vivamus laoreet magna eget facilisis condimentum. Donec porttitor elit nibh, et mollis nunc egestas at. Vestibulum tristique vehicula ligula vel mollis. Quisque ante lectus, tincidunt maximus scelerisque in, molestie nec eros. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.
-          </p>
- --><!--         <div class="carousel-caption d-none d-md-block">
-          <h5>Lorem Ipsum</h5>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-        </div>
- -->      </div>
-      <div class="carousel-item">
-  <div class="centered111">
-    <h5 >Join Dr.Vikas Mahatme</h5> 
-      <h2 >Youth in policy</h2> 
-    </div>        
-          <img class="d-block w-100" src="images/pic5.jpg" max-height=652px alt="Second slide">
+            <div class="imgcontainer">
+            <img class="d-block w-100" src="images/pic1c.jpg?noresize" max-height=652px alt="First slide">
+            </div>
 
-      </div>
-      <div class="carousel-item">
-  <div class="centered111">
-    <h5 >Join Dr.Vikas Mahatme</h5> 
-      <h2 >Youth in policy</h2> 
-    </div>        
-          <img class="d-block w-100" src="images/pic3.jpg" alt="Third slide">
 
         </div>
-      </div>
+        
+        <!-- <div class="carousel-item">
+            <div class="centered111">
+                <h5 >Join Dr.Vikas Mahatme</h5> 
+                <h2 >Youth in policy</h2> 
+            </div>        
+            <img class="d-block w-100" src="images/pic5.jpg" max-height=652px alt="Second slide">
+        </div> -->
 
-      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+        <!-- <div class="carousel-item">
+            <div class="centered111">
+                <h5 >Join Dr.Vikas Mahatme</h5> 
+                <h2 >Youth in policy</h2> 
+            </div>        
+            <img class="d-block w-100" src="images/pic3.jpg" alt="Third slide">
+        </div> -->
 
     </div>
 
+        <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
 
-      <div class="row splitout">
+    </div>
+    <!-- carousel ends -->
+
+    
+    <!-- <div class=".d-none"> -->
+        <div class="mycontainer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 center">
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form" >
+                            <span class="contact100-form-title">
+                                Participate in Nation Building
+                            </span>
+
+                            <div id="colcontent" class= "collapse">
+                                <p>Join us to participate in policy making. We will reach out to you.</p>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                <span class="label-input100">Your Name</span>
+                                <input class="input100" type="text" name="name" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                                <span class="label-input100">Email</span>
+                                <input class="input100" type="text" name="email" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Valid contact is required: 9999999999">
+                                <span class="label-input100">Contact Number</span>
+                                <input class="input100" type="text" name="contact" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
+
+
+                            <div class="container-contact100-form-btn">
+                                <div class="ajax-button">
+                                    <div class="fa fa-check done"></div>
+                                        <div class="fa fa-close failed"></div>
+                                            <a href="#colcontent" data-toggle ="collapse">
+                                                <input id="submit" class="submit" type="button" value="Submit">
+                                            </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>  
+                </div>          
+            </div>
+        </div>
+    <!-- </div> -->
+    
+
+
+
+    <!-- the row splits -->
+    <div class="row splitout">
         <div id="splitout1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 center">
-          <h4>Column 1</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus. Mauris dui felis, sagittis in dapibus eget, porta quis elit. Donec sodales placerat porta. Vivamus laoreet magna eget facilisis condimentum. Donec porttitor elit nibh, et mollis nunc egestas at. Vestibulum tristique vehicula ligula vel mollis. Quisque ante lectus, tincidunt maximus scelerisque in, molestie nec eros. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.
-          </p>
+          <P>Lorem ipsum dolor sit amet</P>
+          <H4> CONSECTETUR ADIPISCING ELIT
+          </H4>
+          <button type="button" id="exploreinitiative1" class="btn btn-outline-success">Contribute</button>
         </div>
         <div id="splitout2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 center">
-          <h4>Column 2</h4>
-          <p>         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus. Mauris dui felis, sagittis in dapibus eget, porta quis elit. Donec sodales placerat porta. Vivamus laoreet magna eget facilisis condimentum. Donec porttitor elit nibh, et mollis nunc egestas at. Vestibulum tristique vehicula ligula vel mollis. Quisque ante lectus, tincidunt maximus scelerisque in, molestie nec eros. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.
-        </p>
+          <P>Lorem ipsum dolor sit amet</P>
+          <H4> CONSECTETUR ADIPISCING ELIT
+          </H4>
+          <button type="button" id="exploreinitiative2" class="btn btn-outline-success">Contribute</button>
         </div>
     </div>
 
@@ -370,7 +418,7 @@
                 <img src="./images/pic1.jpg" class="imginitiative img-responsive img-thumbnail">
             </div>
             <div class="buttoninitiative">
-                <button id="exploreinitiative" class="btn btn-outline-success" type="button">hey</button>
+                <button id="exploreinitiative2" class="btn btn-outline-success" type="button">hey</button>
             </div>
         </div>
         <div class="in col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -378,7 +426,7 @@
                 <img src="./images/pic2.jpg" class="imginitiative img-responsive img-thumbnail">
             </div>
             <div class="buttoninitiative">
-                <button id="exploreinitiative" class="btn btn-outline-success" type="button">you</button>
+                <button id="exploreinitiative2" class="btn btn-outline-success" type="button">you</button>
             </div>
         </div>
         <div class="in col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -386,7 +434,7 @@
                 <img src="./images/pic3.jpg" class="imginitiative img-responsive img-thumbnail">
             </div>
             <div class="buttoninitiative">
-                <button id="exploreinitiative" class="btn btn-outline-success" type="button">sexy</button>
+                <button id="exploreinitiative2" class="btn btn-outline-success" type="button">sexy</button>
             </div>
         </div>
     </div>
@@ -457,7 +505,7 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Contributions</a>
+                    <a class="nav-link" href="#">Contributions</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="news.html">News</a>
@@ -472,7 +520,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/mpvikasmahatme">
+                    <a class="nav-link" href="#">
                         <span class="icon-container"><i class="fab fa-twitter"></i></span>
                     </a>
                 </li>

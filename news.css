@@ -243,3 +243,10 @@ h2#head{
     display: inline-block;
     max-width: 360px;
 }
+
+
+/*navbar colour change is done by brlow*/
+
+nav.navbar.sticky-top.navbar-expand-xl.navbar-light.bg-light {
+    background-color:#ffffff!important;
+}

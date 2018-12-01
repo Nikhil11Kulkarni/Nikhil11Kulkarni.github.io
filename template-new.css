@@ -15,7 +15,7 @@ header {
 .tempnav{
     /* background-color: rgba(255, 255, 255, 0.95); */
     /* background-image: none !important; */
-    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
+    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) )!important;
     position: absolute;;
     width:100%;
     /* border-bottom: 2px solid dodgerblue !important; */
@@ -92,7 +92,7 @@ a.navbar-brand{
 .template-links{
     font-family: century gothic, Futura, "Trebuchet MS", Arial, sans-serif;
     cursor: pointer;
-    font-weight: 600;
+
 
 
 }
