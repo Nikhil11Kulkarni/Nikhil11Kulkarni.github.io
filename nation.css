@@ -10,3 +10,95 @@
     /* your image */
     url(images/rajyasabha3.jpg);   
 }
+
+.rajya_sabha p{
+
+    font-size: 2vh;
+     color: white;    
+    font-family: "Quicksand", sans-serif;
+/*    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );*/
+    padding: 10px 20px 5px 20px;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+/*    line-height: 60px;
+    margin-bottom: 35px;
+*/
+	position:relative;
+/*    position: absolute;*/
+     color: #fff;
+    z-index: 100;
+    /* font-size: 30px; */
+    text-transform: uppercase;
+top: 25%;
+	text-align: center !important; 
+/*    left: 20%;*/
+    font-size : 3vw;
+}
+
+@media (max-width: 992px){
+.rajya_sabha p{
+    font-size: 2vh;
+     color: white;    
+    font-family: "Quicksand", sans-serif;
+/*    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );*/
+    padding: 10px 20px 5px 20px;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+/*    line-height: 60px;
+    margin-bottom: 35px;
+*/
+    position: relative;
+     color: #fff;
+    z-index: 100;
+    /* font-size: 30px; */
+    text-transform: uppercase;
+/*top: 25%;*/
+	text-align: center !important; 
+    font-size : 4vw;
+
+}
+
+}
+@media (max-width: 480px){
+.rajya_sabha p{
+    font-size: 2vh;
+     color: white;    
+    font-family: "Quicksand", sans-serif;
+/*    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );*/
+    padding: 10px 20px 5px 20px;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+/*    line-height: 60px;
+    margin-bottom: 35px;
+*/
+    position: relative;
+     color: #fff;
+    z-index: 100;
+    /* font-size: 30px; */
+    text-transform: uppercase;
+/*top: 25%;*/
+	text-align: center !important; 
+    font-size : 8vw;
+
+}
+
+}
+
+.question-answer{
+		padding-right: 5%;
+		padding-left: 5%;
+		padding-bottom: 2%;
+		padding-top: 2%;
+		
+	    position: relative;
+	    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    /* border: 1px solid #dadada; */
+    border-radius: 0px;
+    margin: 15px 0px 25px 0px;
+    font-family: Garamond;
+    font-size: 18px;
+}

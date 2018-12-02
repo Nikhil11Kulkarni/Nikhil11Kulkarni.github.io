@@ -69,6 +69,7 @@
 .jumbo-outer{
     background: url(https://gratisography.com/thumbnails/gratisography-441-thumbnail-small.jpg);
     background-size: cover;
+    margin-top: 450px;
 }
 .jumbo-inner{
     margin: 10% 15%;
@@ -91,15 +92,15 @@
 }
 .container{
     position: relative !important;
-    top: 30rem !important;
+    /*top: 30rem !important;*/
 }
 .test-row{
-    top: 30rem;
+    /*top: 30rem;*/
     position: relative;
     width: 100%;
     margin-left: 0 !important;
 }
 .footer{
     position: relative;
-    top: 32rem;
+    /*top: 32rem;*/
 }

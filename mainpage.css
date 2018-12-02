@@ -73,7 +73,11 @@ header {
     width:100%;
     margin: 0;
 }
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .image-bottom .row{
+            display: none !important;
+        }
+    } 
 .imgsepration{
     padding:0px !important;
 
@@ -90,6 +94,11 @@ header {
 
 .socialmedia ul li a{
     color: aliceblue;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {   
+    #footer p{
+        font-size: .85rem !important;
+    }
 }
 
 .footer p{
@@ -154,11 +163,19 @@ header {
     padding-left: 0px;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {   
+    #quote p{
+        font-size: 1.6rem !important;
+        padding: 3rem 2rem !important;
+        padding-bottom: 1.25rem !important;
+        }
+    }
+
 #quote p{
-    font-size: 30px;
-    padding: 60px 120px;
+    font-size: 1.8999rem;
+    padding: 3.7998rem 7.5996rem;
     font-family: Baskerville;
-    padding-bottom: 20px;
+     padding-bottom: 1.2666rem;
     font-style: italic;
     line-height: unset !important;
 }
@@ -175,18 +192,29 @@ header {
 #initiatives .row{
 padding-bottom: 80px;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .headerinitiative h1{
+        font-size: 1.6rem !important;
+        line-height: 1.5 !important;
+        padding: 2rem 1rem !important;
+    }
+}
+    
+.headerinitiative{
+    width : 100%;
+}
 .headerinitiative h1{
     font-family: Gill Sans;
     font-size: 2rem;
     line-height: 1.5;
-    padding: 100px;
-    padding-bottom: 15px;
+    padding: 6.333rem;
+    padding-bottom: .94995rem;
     font-weight: 500;
 }
 .headerinitiative h3{
     font-weight: 300;
     font-family: Gill Sans;
-    padding: 30px;
+    padding: 1.8999rem;
     font-size: 1.5rem;
 }
 
@@ -335,7 +363,8 @@ a.nav-link:hover{
 }
 
 #splitout1{
-        padding: 45px 95px !important;
+        padding:  95px !important;
+        height: 25rem;
         /*background: rgba(46,56,48,.9);*/
         background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0,0.6) ), url(./images/indian-voters.jpg);
         background-size:cover;
@@ -348,7 +377,8 @@ a.nav-link:hover{
         /*background: rgba(255,120,51,.9);*/
          background-image: linear-gradient( rgba(225, 225,225, .8), rgba(225, 225, 225,0.8) ), url(./images/india_white.jpg); 
          background-size:cover;
-        padding: 45px 95px; 
+        padding: 95px;
+        height: 25rem; 
         /*color:#111111 !important;*/
 }
 
@@ -389,14 +419,14 @@ a.nav-link:hover{
 
 }
 .fa{
-    font-size: 50px;
+    font-size: 3.1665;
     /*padding: 20px;*/
 
 }
 
 .footer_logo li a{
-    width: 50px;
-    height: 33px;
+    width: 3.1665rem;
+    height: 2.08989rem;
     margin: 0px 0px;
     text-align: left;
     background-color: #313131;
@@ -405,15 +435,15 @@ a.nav-link:hover{
 }
 .dark{
     color:black;
-    padding:20;
+    padding:1.2666rem;
 }
 .transbackground{
         background: rgba(10, 29, 53, 0.5);  
-        font-size: 48px;
+            font-size: 3.03984rem;
         color: white;    
         font-family: "Quicksand", sans-serif;
         background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
-        padding: 10px 20px 5px 20px;
+        padding: .6333rem 1.2666rem .031665rem 1.2666rem;
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 #theCarousel {
@@ -569,6 +599,13 @@ img.d-block{
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .icon-container{
+        width: 30% !important;
+    }
+}
+   
 .icon-container{
     font-size: 30px;
     height: 26px;
@@ -643,5 +680,42 @@ h2#head{
 
 
 
+/* For featured article*/
 
+.featuredarticle{
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+      background-image: 
+    /* top, transparent red */
+    linear-gradient(
+        rgba(0, 0, 0,0.5), rgba(2, 2, 2,0.5) ),
+   
+    url(images/news5.jpg);   
+}
 
+.featuredarticle{
+    color: white;
+    padding: 10% 50% 10% 10%;
+}
+.featuredarticle h3{
+    font-size: 1rem;
+    padding: 5px 0;
+}
+.featuredarticle h1{
+     font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    padding: 5px 0
+}
+.featuredarticle button{
+    margin-left: 0 !important;
+    border-color: white !important;
+}
+.featuredarticle button p{
+    color: white;
+    margin: 0;
+}
+
+button#exploreinitiative {
+    color: #000000;
+}

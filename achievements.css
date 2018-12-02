@@ -7,13 +7,56 @@ body{
     color:black;
 }
 
+
+
+.jumbotron h3{
+    text-align: center;    
+    border-radius: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    posistion:relative;
+        font-family: Alegreya SC;
+/*    z-index: 2;
+    box-shadow: 0 40px 40px -6px black;*/
+}
+.jumbotron h2{
+    padding-top: 5%;
+    text-align: center;
+    border-radius: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    posistion:relative;
+    font-family: Alegreya SC;
+    font-weight: 40%;
+/*    z-index: 2;
+    box-shadow: 0 40px 40px -6px black;*/
+}
+
+.jumbotron p{
+    padding-bottom: 3%;
+    border-radius: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0px;
+    posistion:relative;
+}
 .jumbotron{
-        border-radius: 0;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    
+    border-radius: 0;
     margin-left: 10%;
     margin-right: 10%;
     posistion:relative;
     z-index: 2;
-    box-shadow: 0 40px 40px -6px black;
+/*    box-shadow: 0 40px 40px -6px black;*/
+}
+.jumbotron .padma-shree .padma-pic img{
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .rajgad{
@@ -49,6 +92,7 @@ img.img-thumbnail.rajgad {
     font-family: "Quicksand", sans-serif;
     background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
     padding: 10px 20px 5px 20px;
+
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 /*    line-height: 60px;
     margin-bottom: 35px;
@@ -83,16 +127,66 @@ top: 50%;
     font-size : 2vw;
 }
 
+/*first box* pic*/
 
-/*
+img.img-thumbnail {
 
-.centered111 {
+     background-color:#fff0 !important; 
+     border: 0%  solid 0 !important; 
+     border-radius: 0rem; 
+}
+
+
+/*.award1 {
+padding-left: 7%;
+padding-right: 0%;
+}
+
+.award2 {
+padding-left: 0%;
+padding-right: 7%;
+}
+*/
+
+.jumbotron .awards3{
+     background-color:#ffffff !important; 
+padding-right: 0;
 
 }
 
-.centered111 h5{
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    /* margin-left: -15px; */
 }
-.centered111 h2{
-    font-size : 5vw;
-}*/
+
+.col-lg-6.col-md-6.col-sm-12.col-xs-12.padma-pic {
+    padding-left: 0;
+    padding-right: 0
+}
+
+#award{
+    padding-top: 3%;
+}
+
+.award-two{
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/*Other awards*/
+
+.other-awards{
+    margin: 0 0 60px 0;
+    color: #fff;
+}
+
+.other-awards h1{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 115%;
+    text-align: center !important;
+}
