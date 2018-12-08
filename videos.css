@@ -1,32 +1,3 @@
-
-.mount_everest{
-    height: 73vh;
-     width: 100%;
-    background-size: cover;
-      background-image: 
-    /* top, transparent red */
-    linear-gradient(
-      rgba(245, 244, 243, 0), rgb(0, 0, 0) ),
-    /* your image */
-    url(images/Mount_everest.jpg);   
-  }
-  
-  .mount_everest p{
-     color: white;    
-    font-family: "Quicksand", sans-serif;
-    background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0,0.5) );
-    padding: 10px 20px 5px 20px;
-  
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    position: absolute;
-     color: #fff;
-    z-index: 100;
-    text-transform: uppercase;
-     top: 50%;
-    left: 22%;
-    font-size : 2.2vw;
-  }
-  
 .row{
     margin-right: 0;
     margin-left: 0;
@@ -72,6 +43,12 @@ a.nav-link:hover{
     display: block;
     margin-top: 0; // remove the gap so it doesn't close
  }
+
+.col-lg-5.col-md-5.col-sm-12.col-xs-12 {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
  
 #blog{
     color: #2b325f !important;
@@ -166,22 +143,20 @@ h2:before{
     font-size: 2em;
     letter-spacing: 2px;
     font-weight: 200;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     line-height: 115%;
     text-align: center !important;
 }
 body{
-    background: #1F2533 !important;
+    /*background: #2d442ebd !important;*/
 }
 
 .title {
-    color: #A2D2FF;
+    color: #f7cf56;
   /*  padding: 0 50px 0 0;*/
     font-size: 2.5em;
     font-weight: 100;
     line-height: 110%;
-    padding: 0 5% 0 10%;
 }
 
 .title p{
@@ -203,7 +178,6 @@ body{
 /*    padding: 0;*/
     border: 0;
     color: #fff;
-    padding-right:2%;
 }
 
 .story p{

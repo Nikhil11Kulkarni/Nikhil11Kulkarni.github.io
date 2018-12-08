@@ -25,7 +25,6 @@ a{
     }
 }
 a.nav-link{
-    border-top: 4px solid #f8f9fa;
     transition: border-top .3s;
     margin: 5px;
 
@@ -414,17 +413,6 @@ CSS for footer area */
 .mycol li{
     margin-bottom: 30px;
     font-size: 20px;
-}
-.icon-container{
-    font-size: 30px;
-    height: 26px;
-    width: 36px;
-    display: inline-block;
-    /* vertical-align: middle; */
-    margin-right: 30px;
-    color: #fff;
-    opacity: 0.6;
-
 }
 ul li a{
     color: #fff;

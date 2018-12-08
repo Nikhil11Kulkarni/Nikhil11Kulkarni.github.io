@@ -1,44 +1,57 @@
 body{
-      background-image: 
-    /* top, transparent red */
-    linear-gradient( rgb(0, 0, 0), rgb(19, 18, 18) ),
-    /* your image */
-    url(image/pic3.jpg);
+
+}
+.item__details{
+    margin:2% !important;
+    text-align: center;
+}
+h3{
+    font-family: Gill Sans;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: .94995rem;
+    font-weight: 500;
     color:black;
+    text-align: center;
 }
 
-
+p{
+    font-size: 1.1rem;
+    padding: 5px 0;
+    color:black;
+    font-family: 'Gill Sans';
+    font-size: medium;
+    font-weight: 200;
+}
 
 .jumbotron h3{
     text-align: center;    
     border-radius: 0;
-    margin-left: 10%;
-    margin-right: 10%;
-    posistion:relative;
-        font-family: Alegreya SC;
+    position:relative;
 /*    z-index: 2;
     box-shadow: 0 40px 40px -6px black;*/
+}
+#padma{
+    color: white;
+
 }
 .jumbotron h2{
     padding-top: 5%;
     text-align: center;
     border-radius: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-    posistion:relative;
-    font-family: Alegreya SC;
+    position:relative;
     font-weight: 40%;
 /*    z-index: 2;
     box-shadow: 0 40px 40px -6px black;*/
 }
 
 .jumbotron p{
-    padding-bottom: 3%;
+    padding-bottom: 10%;
     border-radius: 0;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 0px;
-    posistion:relative;
+    position:relative;
 }
 .jumbotron{
     padding-left: 0px;
@@ -49,7 +62,7 @@ body{
     border-radius: 0;
     margin-left: 10%;
     margin-right: 10%;
-    posistion:relative;
+    position:relative;
     z-index: 2;
 /*    box-shadow: 0 40px 40px -6px black;*/
 }
@@ -58,7 +71,9 @@ body{
     padding-bottom: 0px;
     padding-top: 0px;
 }
-
+.padma-text{
+    padding:3rem;
+}
 .rajgad{
     width: 100%;
 /*    height: 50vh;*/
@@ -75,7 +90,7 @@ img.img-thumbnail.rajgad {
 
 
 .mount_everest{
-    height: 90vh;
+    height: 73vh;
      width: 100%;
     background-size: cover;
       background-image: 
@@ -126,6 +141,9 @@ top: 50%;
     left: 40%;
     font-size : 2vw;
 }
+.jumbotron.padma{
+    background-color: #8DC97F;
+}
 
 /*first box* pic*/
 
@@ -135,7 +153,6 @@ img.img-thumbnail {
      border: 0%  solid 0 !important; 
      border-radius: 0rem; 
 }
-
 
 /*.award1 {
 padding-left: 7%;
@@ -173,6 +190,8 @@ padding-right: 0;
 .award-two{
     padding-right: 6%;
     padding-left: 6%;
+    padding-top: 2%;
+    background-color: #57ACC7;
 }
 
 /*Other awards*/
@@ -189,4 +208,13 @@ padding-right: 0;
     text-transform: uppercase;
     line-height: 115%;
     text-align: center !important;
+}
+.heading{
+    letter-spacing: .1em !important;
+    color: aliceblue !important;
+    margin-left: 10px !important;
+    font-weight: 300 !important;
+    font-family: futura !important;
+    margin-bottom: 0px !important;
+    font-size: 2.5rem !important;
 }
