@@ -1,10 +1,12 @@
 .contact-col-1{
-    background-image: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45) ),url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg);
+    background-image: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45) );
+    /* ,url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .contact-col-2{
-    background-image: linear-gradient( rgba(12, 219, 226, 0.45), rgba(16, 190, 199, 0.45) ),url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg);
+    background-image: linear-gradient( rgba(12, 219, 226, 0.45), rgba(16, 190, 199, 0.45) );
+    /* ,url(https://isorepublic.com/wp-content/uploads/2017/08/talking-531x354.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }

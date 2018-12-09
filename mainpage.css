@@ -569,8 +569,6 @@ ul li a{
     color: #fff;
 }
 ul{
-    position: relative;
-    z-index:1; 
     color: white;
     letter-spacing: .08em;
     line-height: 18px;
