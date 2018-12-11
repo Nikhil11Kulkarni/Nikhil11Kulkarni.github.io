@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Arvo");
 body,
 html {
@@ -19,9 +18,7 @@ html {
   }
 }
 
-.row.justify-content-center{
-  margin-bottom: 3%;
-}
+
 .imgcontainer{
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, .5),rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 }
@@ -46,7 +43,7 @@ img.d-block{
 
 .section {
   display: none;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -56,18 +53,11 @@ img.d-block{
 @supports (display: grid) {
   .section {
     display: block;
-    background-image: linear-gradient( rgba(75, 110, 130, 1), rgba(87, 172, 199, 1),rgba(148, 198, 132, .8));
-
+    background-color: #9daaad;
   }
 }
+
 .section h1 {
-  letter-spacing: .1em !important;
-    color: aliceblue !important;
-    margin-left: 10px !important;
-    font-weight: 300 !important;
-    font-family: futura !important;
-    margin-bottom: 0px !important;
-    font-size: 2.5rem !important;
   font-size: 1.8rem;
   font-family: "century gothic";
   text-align: center;
@@ -78,16 +68,17 @@ img.d-block{
 .section p {
   font-size: 1rem;
   font-family: "Trebuchet MS", Arial, sans-serif;
+  font-style: italic;
   color: #09265e;
   margin: 0 0 1.5em;
 }
 
 hr.soften {
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-  background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-  background-image:     -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-  background-image:      -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
   border: 0;
 }
 
@@ -150,12 +141,9 @@ hr.soften {
 }
 .item--medium {
   grid-row-end: span 4;
-  margin: 2rem;
-
 }
 .item--large {
   grid-row-end: span 5;
-  margin: 2rem;
 }
 .item--full {
   grid-column-end: auto;
@@ -167,13 +155,10 @@ hr.soften {
   }
 }
 .item__details {
-  margin: 10%;
-
-  font-style: normal;
   position: relative;
   z-index: 1;
   padding: 15px;
-  /* height: 147.6px; */
+  height: 147.6px;
   color: #444;
   background: #fff;
   /*text-transform: lowercase;*/
@@ -182,42 +167,30 @@ hr.soften {
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-weight: 300;
   font-size: 1.0rem;
+  font-style: italic;
   overflow: hidden;
 }
 .item__details h5{
-  font-family: Gill Sans;
-  font-size: 2rem;
-  line-height: 1.5;
-  padding-bottom: .94995rem;
-  font-weight: 500;
-  color: black;
-
   text-align: center;
-  /* font-family: "century gothic",sans-serif; */
-  /* font-size: 1.2rem;   */
-  /* color: #111; */
-  /* font-weight: 550; */
-  /* padding-bottom: 0.6rem; */
+  font-family: "century gothic",sans-serif;
+  font-size: 1.2rem;  
+  color: #111;
+  font-weight: 550;
+  padding-bottom: 0.6rem;
 
 }
 
 
 
 .item__details p{
-    padding: 5px 0;
-    color: black;
-    font-family: 'Gill Sans';
-    font-size: medium;
-    font-weight: 200;
-
-  /* text-align: center; */
+  text-align: center;
   /*font-family: "century gothic",sans-serif;*/
-  /* font-family: "Trebuchet MS", Arial, sans-serif; */
-  /* font-weight: 300; */
-  /* font-size: 1.0rem;   */
-  /* color: #828282; */
-  /* padding-left: 4.2rem; */
-  /* padding-right: 4.2rem; */
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.0rem;  
+  color: #828282;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
   /*padding-bottom: 0.6rem;*/
 
 }
@@ -342,6 +315,7 @@ a{
     }
 }
 a.nav-link{
+    border-top: 4px solid #f8f9fa;
     transition: border-top .3s;
     margin: 5px;
 
@@ -396,14 +370,14 @@ h2{
 }
 
 h2:before{
-    /* display: block;
+    display: block;
     content: " ";
     width: 95px;
     height: 1px;
     background: #da1333;
     position: absolute;
     top: 0px;
-    left: -225px; */
+    left: -225px;
 }
 
 #page-content h1{
@@ -445,7 +419,6 @@ h2:before{
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
-  height: 79vh;
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
@@ -687,8 +660,4 @@ img:hover {
 .hvrbox.active .hvrbox-text_mobile {
     display: block;
 }
-
-
-
-
 

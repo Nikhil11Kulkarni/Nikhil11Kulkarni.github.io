@@ -1,3 +1,88 @@
+<?php
+//index.php
+
+$error = '';
+$name = '';
+$email = '';
+$contact = '';
+// $message = '';
+
+function clean_text($string)
+{
+ $string = trim($string);
+ $string = stripslashes($string);
+ $string = htmlspecialchars($string);
+ return $string;
+}
+
+if(isset($_POST["submit"]))
+{
+ if(empty($_POST["name"]))
+ {
+  $error .= '<p>Please Enter your Name</p>';
+ }
+ else
+ {
+  $name = clean_text($_POST["name"]);
+  if(!preg_match("/^[a-zA-Z ]*$/",$name))
+  {
+   $error .= '<p>Only letters and white space allowed</p>';
+  }
+ }
+ if(empty($_POST["email"]))
+ {
+  $error .= '<p>Please Enter your Email</p>';
+ }
+ else
+ {
+  $email = clean_text($_POST["email"]);
+  if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+  {
+   $error .= '<p>Invalid email format</p>';
+  }
+ }
+ if(empty($_POST["contact"]))
+ {
+  $error .= '<p>Contact is required</p>';
+ }
+ else
+ {
+  $contact = clean_text($_POST["contact"]);
+ }
+ // if(empty($_POST["message"]))
+ // {
+ //  $error .= '<p><label class="text-danger">Message is required</label></p>';
+ // }
+ // else
+ // {
+ //  $message = clean_text($_POST["message"]);
+ // }
+
+ if($error == '')
+ {
+  $file_open = fopen("contact_data1.csv", "a");
+  $no_rows = count(file("contact_data1.csv"));
+  if($no_rows > 1)
+  {
+   $no_rows = ($no_rows - 1) + 1;
+  }
+  $form_data = array(
+   'sr_no'  => $no_rows,
+   'name'  => $name,
+   'email'  => $email,
+   'contact' => $contact,
+   // 'message' => $message
+  );
+  fputcsv($file_open, $form_data);
+  $error = 'Thank';
+  $name = '';
+  $email = '';
+  $contact = '';
+  // $message = '';
+ }
+}
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -7,20 +92,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon title and our CSS -->    
     <link rel="shortcut icon" href="vikasicon.ico">
     <title>Home | Dr. Mahatme</title>
-    <link rel="stylesheet" type="text/css" href="mainpage.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
-    <link rel="stylesheet" type="text/css" href="contact_box.css">
+    <link rel="stylesheet" type="text/css" href="./mainpage.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
+    <link rel="stylesheet" type="text/css" href="./contact_box.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
-
+    <link rel="stylesheet" type="text/css" href="./animate.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
 
 <!--     <link rel="stylesheet" type="text/css" href="Newpages/navbar.css">
     <link rel="stylesheet" type="text/css" href="Newpages/footer.css"> -->
@@ -34,7 +118,6 @@
 
 
       <!--submit button  -->
-
 
 
   <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
@@ -99,6 +182,7 @@
 
 
   <body>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <header class="nav-up">
                 <nav class="navbar sticky-top navbar-expand-xl navbar-light">
                         <a class="navbar-brand" href="index.html">
@@ -433,7 +517,7 @@
         <div class="container">
         <div class="row ">
         <div class="headerinitiative">
-            <h1>Initiatives of Dr. Vikas Mahatme</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis consectetur exercitationem vero neque hic</h1>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
         </div>
         <div class="in col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -441,7 +525,6 @@
                 <img src="./images/pic1.jpg" class="imginitiative img-responsive img-thumbnail">
             </div>
             <div class="buttoninitiative">
-
                 <button id="exploreinitiative2" class="btn btn-outline-success" type="button">init1</button>
             </div>
         </div>
@@ -550,7 +633,7 @@
                 <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link active" href="https://www.facebook.com/drmahatme/">
-                        <span class="icon-container"><i class="fab fa-facebook-square"></i></span>
+                        <span class="icon-container"><i class="fab fa-facebook-f"></i></span>
                     </a>
                 </li>
                 <li class="nav-item">

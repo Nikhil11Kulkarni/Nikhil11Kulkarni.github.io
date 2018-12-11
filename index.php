@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon title and our CSS -->    
     <link rel="shortcut icon" href="vikasicon.ico">
@@ -20,7 +20,6 @@
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
     <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
-
 
 <!--     <link rel="stylesheet" type="text/css" href="Newpages/navbar.css">
     <link rel="stylesheet" type="text/css" href="Newpages/footer.css"> -->
@@ -36,8 +35,7 @@
       <!--submit button  -->
 
 
-
-  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <style>
       @import url(https://fonts.googleapis.com/css?family=Raleway:100,600,400);
@@ -99,6 +97,7 @@
 
 
   <body>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <header class="nav-up">
                 <nav class="navbar sticky-top navbar-expand-xl navbar-light">
                         <a class="navbar-brand" href="index.html">
@@ -433,7 +432,7 @@
         <div class="container">
         <div class="row ">
         <div class="headerinitiative">
-            <h1>Initiatives of Dr. Vikas Mahatme</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis consectetur exercitationem vero neque hic</h1>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
         </div>
         <div class="in col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -441,7 +440,6 @@
                 <img src="./images/pic1.jpg" class="imginitiative img-responsive img-thumbnail">
             </div>
             <div class="buttoninitiative">
-
                 <button id="exploreinitiative2" class="btn btn-outline-success" type="button">init1</button>
             </div>
         </div>
@@ -550,7 +548,7 @@
                 <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link active" href="https://www.facebook.com/drmahatme/">
-                        <span class="icon-container"><i class="fab fa-facebook-square"></i></span>
+                        <span class="icon-container"><i class="fab fa-facebook-f"></i></span>
                     </a>
                 </li>
                 <li class="nav-item">
