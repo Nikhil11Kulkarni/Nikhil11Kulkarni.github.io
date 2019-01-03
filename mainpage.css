@@ -155,12 +155,15 @@ padding-bottom: 80px;
     padding: 6.333rem;
     padding-bottom: .94995rem;
     font-weight: 500;
+    padding-top: 3.333rem;
+    padding-bottom: 0;
 }
 .headerinitiative h3{
     font-weight: 300;
     font-family: Gill Sans;
     padding: 1.8999rem;
     font-size: 1.5rem;
+    padding-top:0;
 }
 
 
@@ -439,7 +442,7 @@ h4{
     line-height: 2rem;
 }
 img.d-block{
-        height: 95vh;
+        height: 100vh;
     object-position: 0 10%;
     max-height: 100vh;
     object-fit: cover;
@@ -643,7 +646,7 @@ h2#head{
 
 .featuredarticle{
     color: white;
-    padding: 10% 50% 10% 10%;
+    padding: 5% 50% 5% 10%;
 }
 .featuredarticle h3{
     font-size: 1rem;
